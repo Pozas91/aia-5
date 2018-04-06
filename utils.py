@@ -1,5 +1,4 @@
 import itertools
-
 from collections import Counter
 
 
@@ -166,6 +165,8 @@ def load_shopping_cart(path: str) -> (list, list):
             transaction = set(elements)
             shopping_cart.append(transaction)
 
+    # Se añade la clase Counter para dotar de un mayor rendimiento para los elementos iniciales, ya que es aquí donde el
+    # programa se demora debido a la cantidad de elementos.
     return shopping_cart, Counter(all_elements)
 
 

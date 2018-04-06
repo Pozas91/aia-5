@@ -75,8 +75,8 @@ if __name__ == '__main__':
 
     print('Iniciando la ejecución del programa principal...', end='\n\n')
 
-    min_support = 2000
-    min_confidence = 0.8
+    min_support = 10000
+    min_confidence = 0.5
     min_lift = 0.5
     path = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'assets\\retail.dat')
 
